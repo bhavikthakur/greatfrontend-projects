@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #F9FAFB, #D2D6DB);
+    font-family: "Roboto", sans-serif;
+    color: #525252;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    max-width: 550px;
+    width: 90%;
+
+
+}
+
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #171717;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+.profile-thumbnail {
+    width: 70px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+
+@media (width < 600px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+}
